@@ -175,12 +175,12 @@
 /* ---------------CONTAINER--------------- */
 .container {
     background-color: #eee;
-
+    transform: translateY(300px);
 }
 /* ---------CONTAINER BACKGROUND------- */
 
-.container .slideshow-container {
-    position: relative;
+.slideshow-container {
+    position: absolute;
     margin: auto;
 }
 .mySlides {
@@ -195,7 +195,7 @@
 .slideshow-container .prev,.slideshow-container .next {
     cursor: pointer;
     position: absolute;
-    top: 25%;
+    top: 20%;
     width: auto;
     padding:30px 25px;
     color: white;
@@ -232,8 +232,6 @@
     to {opacity: 1}
 }
 /* ---------MAIN CONTAINER---------- */
-.container {
-}
 .main-container {
     margin: 0px 16px;
     display: flex;
@@ -516,6 +514,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #232F3E;
+    transform: translateY(300px);
 }
 .footer .navAccessibility {
     width: 70%;
