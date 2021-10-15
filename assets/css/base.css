@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    line-height: 20px;
+    font-size: 19px;
+}
+.font-medium {
+    font-size: 12px;
+}
+.font-large {
+    font-size: 16px;
+}
+.opacity {
+    opacity: 0.7;
+}
+.weight {
+    font-weight: 600;
+}

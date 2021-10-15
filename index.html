@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="toolbar" id="top">
+            <div class="logo">
+                <img src="/assets/img/logo.png" width="100px" height="33px" alt="">
+            </div>
+            <div class="ship-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="country">
+                    <span class="font-medium opacity">Deliver to</span>
+                    <span class="ship-country font-large weight" >VietNam</span>
+                </div>
+            </div>
+            <form class="findbar">
+                <div class="item-select">
+                    <select class="font-large">
+                      <option value="0">All</option>
+                      <option value="1">All department</option>
+                      <option value="2">Arts & Crafts</option>
+                      <option value="3">Automotive</option>
+                      <option value="4">Beauty & Personal Care</option>
+                      <option value="5">Computer</option>
+                    </select>
+                </div>
+                <input type="text" onclick="showBorder()">
+                <i class="fas fa-search" id="icon-find"></i>
+            </form>
+            <div class="country-select">
+                    <select>
+                    <option value="0">USA</option>
+                    <option value="1">Africa</option>
+                    <option value="2">Asia</option>
+                    <option value="3">Europe</option>
+                    <option value="4">VietNam</option>
+                </select>
+            </div>
+            <div class="register">Register</div>
+            <a class="order">
+                <span class="font-medium opacity">Returns</span>
+                <span class="font-large weight">& Orders</span>
+            </a>
+            <a href="" class="cart">
+                <i class="fas fa-shopping-cart"></i> 
+            </a>
+        </div>
+        <div class="navbar">
+            <div class="sidenav font-large"><i class="fas fa-bars"></i> All</div>
+            <div class="shopnav font-large">Today's Deals</div>
+            <div class="shopnav font-large">Customer Service</div>
+            <div class="shopnav font-large">Registry</div>
+            <div class="shopnav font-large">Gift Cards</div>
+            <div class="shopnav font-large">Sell</div>
+            <div class="disaster font-large">
+                <a href="" target="_blank">Amazon's response to COVID-19</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides slide1 fade">
+                <img src="/assets/img/background1.jpg" style="width:100%">
+              </div>
+            <div class="mySlides fade">
+                <img src="/assets/img/background2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="/assets/img/background3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="/assets/img/background4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="/assets/img/background5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="/assets/img/background6.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="main-container">
+            <div class="container-item">
+                <h1 class="title-item">AmazonBasics</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic1.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large"> See more </a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Computers & Accessories</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic2.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large"> Shop now </a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Electronics</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic3.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large"> See more </a>
+                </div>
+            </div>
+            <div class="container-item sign-in">
+                <div class="sign-in-form">
+                    <h2 class="sign-in-title">Sign in for the best experience</h2>
+                    <div class="sign-in-btn"> 
+                        <a href="">Sign in securely</a>
+                    </div>
+                </div>
+                <img src="/assets/img/pic4.jpg" alt="">
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Oculus</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic5.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Shop now</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Deals & Promotions</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic6.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Shop now</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Gaming accessories</h1>
+                <div class="container-mini-item">
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic7.1.jpg" alt="">
+                            <div class="mini-item-title font-large">Headsets</div>
+                        </a>
+                    </div>
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic7.2.jpg" alt="">
+                            <div class="mini-item-title font-large">Keyboards</div>
+                        </a>
+                    </div>
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic7.3.jpg" alt="">
+                            <div class="mini-item-title font-large">Computer Mice</div>
+                        </a>
+                    </div>
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic7.4.jpg" alt="">
+                            <div class="mini-item-title font-large">Chairs</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Seemore</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Easy Returns</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic8.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-container">
+            <h2 class="title">Top Sellers in Books for you
+                <span><a href="" class="see-more font-large">Shop now</a></span>
+            </h2>
+            <div class="myItems item1 fade">
+                <a href="" class="Item">
+                    <img src="/assets/img/book1.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book2.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book3.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book4.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book5.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book6.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book7.jpg" alt="">
+                </a>
+            </div>
+            <div class="myItems fade">
+                <a href="" class="Item">
+                    <img src="/assets/img/book8.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book9.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book10.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book11.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book12.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book13.jpg" alt="">
+                </a>
+                <a href="" class="Item">
+                    <img src="/assets/img/book14.jpg" alt="">
+                </a>
+            </div>
+            <a class="prev" onclick="plusItems(-1)">&#10094;</a>
+            <a class="next" onclick="plusItems(1)">&#10095;</a>
+        </div>
+        <div class="main-container">
+            <div class="container-item">
+                <h1 class="title-item">Gaming accessories</h1>
+                <div class="container-mini-item">
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic9.1.jpg" alt="">
+                            <div class="mini-item-title font-large">Apparel</div>
+                        </a>
+                    </div>
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic9.2.jpg" alt="">
+                            <div class="mini-item-title font-large">Hats</div>
+                        </a>
+                    </div>
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic9.3.jpg" alt="">
+                            <div class="mini-item-title font-large">Action figures</div>
+                        </a>
+                    </div>
+                    <div class="mini-item">
+                        <a href="" class="mini-item-img">
+                            <img src="/assets/img/pic9.4.jpg" alt="">
+                            <div class="mini-item-title font-large">Mugs</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">See more</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Shop Laptops & Tablets</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic10.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">See more</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Explore home bedding</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic11.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">See more</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Home & Kitchen</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic12.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">See more</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Shop Pet supplies</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic13.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Shop now</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Shop activity trackers and smartwatches</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic14.jpg" alt="" style="height:300px;">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Shop now</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">For your Fitness Needs</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic15.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">Shop now</a>
+                </div>
+            </div>
+            <div class="container-item">
+                <h1 class="title-item">Explore home bedding</h1>
+                <a class="item-img" href="">
+                    <img src="/assets/img/pic16.jpg" alt="">
+                </a>
+                <div class="see-more-btn">
+                    <a href="" class="see-more font-large">See more</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="sub-container">
+            <h2 class="title">Inspired by your browsing history
+                <span class="page">Page 1 of 1</span>
+            </h2>
+            <div class="item-container">    
+                <div class="recommendItems item1 fade">
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book1.jpg" alt=""></a>
+                        <a href="" class="item-name">Is Animal Kissed Good Nights</a>
+                        <div class="rating">Rating:  5.0/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            9.99
+                        </a>
+                    </div>
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book2.jpg" alt=""></a>
+                        <a href="" class="item-name">Chicka Chicka Boom Boom</a>
+                        <div class="rating">Rating: 4.0/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            8.49
+                        </a>
+                    </div>
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book3.jpg" alt=""></a>
+                        <a href="" class="item-name">The Going To Bed Book</a>
+                        <div class="rating">Rating: 4.5/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            7.49
+                        </a>
+                    </div>
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book4.jpg" alt=""></a>
+                        <a href="" class="item-name">Guess! How Much I Love You</a>
+                        <div class="rating">Rating: 4.0/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            7.99
+                        </a>
+                    </div>
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book5.jpg" alt=""></a>
+                        <a href="" class="item-name">List Books fod Kid</a>
+                        <div class="rating">Rating: 4.5/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            14.99
+                        </a>
+                    </div>
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book6.jpg" alt=""></a>
+                        <a href="" class="item-name">Where The Wild Things Are</a>
+                        <div class="rating">Rating: 5.0/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            5.00
+                        </a>
+                    </div>
+                    <div href="" class="Item">
+                        <a href=""><img src="/assets/img/book7.jpg" alt=""></a>
+                        <a href="" class="item-name">My First Book of Baby Signs</a>
+                        <div class="item-rating">Rating: 4.5/5.0</div>
+                        <a href="" class="item-cost">
+                            <i class="fas fa-dollar-sign"></i>
+                            5.00
+                        </a>
+                    </div>
+                </div>
+                <a class="prev" onclick="">&#10094;</a>
+                <a class="next" onclick="">&#10095;</a>
+            </div>
+            <div class="sub-footer">
+                <h5 class="title">See personalized recommendations</h5>
+                <button class="sign-in-btn">Sign in</button>
+                <div class="register">New customer?
+                    <a href="">Start here</a>
+                </div>
+                <a href="" class="back-to-top">Back to top</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="navAccessibility">
+            <ul class="link-list">Get to Know Us
+                <li><a href="">Careers</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Amazon</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Amazon Devices</a></li>
+            </ul>
+            <ul class="link-list">Make Money with Us
+                <li><a href="">Sell products on Amazon</a></li>
+                <li><a href="">Sell on Amazon Business</a></li>
+                <li><a href="">Sell apps on Amazon</a></li>
+                <li><a href="">Become an Affiliate</a></li>
+                <li><a href="">Advertise Your Products</a></li>
+                <li><a href="">Self-Publish with Us</a></li>
+                <li><a href="">Host an Amazon Hub</a></li>
+                    <li>
+                        <a href="">&#10095;</a>
+                        <a href="">See More Make Money with Us</a>
+                    </li>
+            </ul>
+            <ul class="link-list">Amazon Payment Products
+                <li><a href="">Amazon Business Card</a></li>
+                <li><a href="">Shop with Points</a></li>
+                <li><a href="">Reload Your Balance</a></li>
+                <li><a href="">Amazon Currency Converter</a></li>
+            </ul>
+            <ul class="link-list">Let Us Help You
+                <li><a href="">Amazon and COVID-19</a></li>
+                <li><a href="">Your Account</a></li>
+                <li><a href="">Your Orders</a></li>
+                <li><a href="">Shipping Rates & Policies</a></li>
+                <li><a href="">Returns & Replacements</a></li>
+                <li><a href="">Manage Your Content and Devices</a></li>
+                <li><a href="">Amazon Assistant</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="navFooterPadItemLine">
+            <span>
+                <a href="">
+                    <img src="/assets/img/logo2.jpg" alt="">
+                </a>
+            </span>
+            <span class="container-desktop">
+                <div class="language">
+                    <a href="">
+                        <i class="fas fa-globe"></i>
+                        <span>English</span>
+                    </a>
+                </div>
+                <div class="currency">
+                    <a href="">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD - U.S.Dollar</span>
+                    </a>
+                </div>
+                <div class="country">
+                    <a href="">
+                        <i class="fas fa-flag-usa"></i>
+                        <span>United States</span>
+                    </a>
+                </div>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
