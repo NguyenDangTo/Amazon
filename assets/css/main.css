@@ -685,17 +685,17 @@
 }
 
 
-.register-form .link {
+.register-form .policies-link {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
 }
-.register-form .link a {
+.register-form .policies-link a {
     text-decoration: none;
     font-size: 12px;
     color: rgba(10, 122, 85, 0.8);
 }
-.register-form .link a:hover {
+.register-form .policies-link a:hover {
     color: rgba(247, 54, 6, 0.8);
     text-decoration: underline;
 }
@@ -751,7 +751,7 @@
     border-color: rgb(192, 223, 18);
     border-radius: 4px;
     background-color: rgb(217, 255, 4);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -761,6 +761,7 @@
 }
 .register-container .policies {
     font-size: 13px;
+    line-height: 10px;
     margin-bottom: 10px;
 }
 .register-container .policies a {
@@ -774,6 +775,8 @@
 }
 .register-container .link {
     font-size: 12px;
+    line-height: 10px;
+
 }
 .register-container .link span {
     font-size: 12px;
@@ -782,6 +785,20 @@
     cursor: pointer;
 }
 .register-container .link span:hover {
+    color: rgba(247, 54, 6, 0.8);
+    text-decoration: underline;
+}
+.register-container .policies-link {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.register-container .policies-link a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(10, 122, 85, 0.8);
+}
+.register-container .policies-link a:hover {
     color: rgba(247, 54, 6, 0.8);
     text-decoration: underline;
 }
