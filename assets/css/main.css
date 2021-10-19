@@ -65,6 +65,7 @@
     border:none;
     padding-left: 12px;
     outline: none;
+    min-width: 180px;
 }
 
 .toolbar .findbar #icon-find {
@@ -172,8 +173,8 @@
     border-radius: 8px;
     cursor: pointer;
 }
-/* ---------------CONTAINER--------------- */
-.container {
+/* ---------------MAIN CONTAINER--------------- */
+.main-container {
     background-color: #eee;
     transform: translateY(300px);
 }
@@ -231,20 +232,19 @@
     from {opacity: 0.6} 
     to {opacity: 1}
 }
-/* ---------MAIN CONTAINER---------- */
-.main-container {
+/* ---------CONTAINER---------- */
+.container {
     margin: 0px 16px;
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.main-container .container-item {
+.container .container-item {
     height: 420px;
     background-color: #fff;
-    width: 350px;
+    width: 320px;
     min-width: 280px;
-    max-width: 480px;
     overflow: hidden;
     vertical-align: top;
     margin-top: 8px;
@@ -293,19 +293,21 @@
     margin-bottom: 24px;
     text-align: center;
 }
-.sign-in-form .sign-in-btn a {
+.sign-in-form .sign-in-btn button {
     padding: 5px 80px;
     background-color: rgb(217, 255, 4);
     text-decoration: none;
     border-radius: 8px;
     box-shadow: 2px 1px 4px #888888;
+    border: 1px solid rgb(188, 221, 3);
 }
-.sign-in-form .sign-in-btn a:hover {
+.sign-in-form .sign-in-btn button:hover {
     background-color: rgb(205, 240, 11);
 
 }
 .container-item.sign-in img {
     width: 100%;
+    height: 300px;
 }
 .container-mini-item {
     display: flex;
@@ -327,12 +329,13 @@
 .mini-item-img .mini-item-title:hover {
     color: rgba(255, 0, 0, 0.8);
 }
-.container > .item-container {
+.main-container > .item-container {
     margin: 0px 30px;
     padding: 16px;
     background-color: #fff;
     position: relative;
 }
+
 .item-container .title .see-more {
     padding-left: 24px;
     text-decoration: none;
@@ -484,20 +487,20 @@
 .sub-footer .sign-in-btn:hover {
     background-color: rgb(205, 240, 11);
 }
-.sub-footer .register {
+.sub-footer .bar {
     padding-top: 12px;
     padding-bottom: 20px;
     font-size: 14px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 16px;
 }
-.sub-footer .register a {
+.sub-footer .bar span {
     text-decoration: none;
     color: rgba(10, 122, 85, 0.8);
     font-size: 13px;
     font-weight: 600;
 }
-.sub-footer .register a:hover {
+.sub-footer .bar span:hover {
     color: rgb(236, 87, 0)
 }
 .back-to-top {
@@ -569,4 +572,216 @@
 }
 .navFooterPadItemLine .container-desktop div a:hover {
     color: #fff;
+}
+/* ----------------SIGN-IN-OVERLAY------------------- */
+.sign-in-ticket {
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+}
+.sign-in-modal {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    bottom: 10%;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.sign-in-modal .logo {
+    text-align: center;
+    width: 100%;
+}
+.sign-in-container {
+    padding: 16px;
+}
+.sign-in-container h2 {
+    font-size: 30px;
+    padding-bottom: 12px;
+}
+.sign-in-container label {
+    font-size: 14px;
+    font-weight: 600;
+}
+.sign-in-container input {
+    width: 100%;
+    height: 31px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+.sign-in-container .btn {
+    width: 100%;
+    height: 31px;
+    border-color: rgb(192, 223, 18);
+    border-radius: 4px;
+    background-color: rgb(217, 255, 4);
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sign-in-container .btn:hover {
+    background-color: rgb(213, 247, 26);
+    box-shadow: 2px 1px 3px 0px #ccc;
+}
+.sign-in-container .policies {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.sign-in-container .policies a {
+    text-decoration: none;
+    color: rgba(10, 122, 85, 0.8);
+    font-size: 15px;
+}
+.sign-in-container .policies a:hover {
+    color: rgba(247, 54, 6, 0.8);
+    text-decoration: underline;
+}
+.sign-in-container .help-btn {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(10, 86, 122, 0.8);
+}
+.sign-in-container .help-btn:hover {
+    color: rgba(247, 54, 6, 0.8);
+    text-decoration: underline;
+}
+.register-form {
+    padding: 16px;
+    transform: translateY(50px);
+}
+.register-form .divider {
+    content: "";
+    width: 100%;
+    border-top: 1px solid #ccc
+}
+.register-form .divider h5 {
+    padding-bottom: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #fff;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    transform: translateY(-10px);
+}
+.register-form .btn {
+    width: 100%;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(0,0,0,0.04);
+}
+.register-form .btn:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+
+.register-form .link {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.register-form .link a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(10, 122, 85, 0.8);
+}
+.register-form .link a:hover {
+    color: rgba(247, 54, 6, 0.8);
+    text-decoration: underline;
+}
+/* ----------------REGISTER-OVERLAY------------------- */
+
+.register-ticket {
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+}
+.register-modal {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    bottom: 10%;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.register-modal .logo {
+    text-align: center;
+    width: 100%;
+}
+.register-modal .logo {
+    text-align: center;
+    width: 100%;
+}
+.register-container {
+    padding: 16px;
+}
+.register-container h2 {
+    font-size: 30px;
+    padding-bottom: 6px;
+}
+.register-container label {
+    font-size: 12px;
+    font-weight: 600;
+}
+.register-container input {
+    width: 100%;
+    height: 31px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+.register-container .btn {
+    width: 100%;
+    height: 31px;
+    border-color: rgb(192, 223, 18);
+    border-radius: 4px;
+    background-color: rgb(217, 255, 4);
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.register-container .btn:hover {
+    background-color: rgb(213, 247, 26);
+    box-shadow: 2px 1px 3px 0px #ccc;
+}
+.register-container .policies {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.register-container .policies a {
+    text-decoration: none;
+    color: rgba(10, 122, 85, 0.8);
+    font-size: 15px;
+}
+.register-container .policies a:hover {
+    color: rgba(247, 54, 6, 0.8);
+    text-decoration: underline;
+}
+.register-container .link {
+    font-size: 12px;
+}
+.register-container .link span {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(102, 14, 129);
+    cursor: pointer;
+}
+.register-container .link span:hover {
+    color: rgba(247, 54, 6, 0.8);
+    text-decoration: underline;
 }

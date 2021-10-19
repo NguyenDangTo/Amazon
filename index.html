@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="toolbar" id="top">
             <div class="logo">
                 <img src="assets/img/logo.png" width="100px" height="33px" alt="">
@@ -89,8 +89,8 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </header>
-    <div class="container">
-        <div class="main-container">
+    <div class="main-container">
+        <div class="container">
             <div class="container-item">
                 <h1 class="title-item">AmazonBasics</h1>
                 <a class="item-img" href="">
@@ -122,7 +122,7 @@
                 <div class="sign-in-form">
                     <h2 class="sign-in-title">Sign in for the best experience</h2>
                     <div class="sign-in-btn"> 
-                        <a href="">Sign in securely</a>
+                        <button>Sign in securely</button>
                     </div>
                 </div>
                 <img src="assets/img/pic4.jpg" alt="">
@@ -240,7 +240,7 @@
             <a class="prev" onclick="plusItems(-1)">&#10094;</a>
             <a class="next" onclick="plusItems(1)">&#10095;</a>
         </div>
-        <div class="main-container">
+        <div class="container">
             <div class="container-item">
                 <h1 class="title-item">Gaming accessories</h1>
                 <div class="container-mini-item">
@@ -414,8 +414,8 @@
             <div class="sub-footer">
                 <h5 class="title">See personalized recommendations</h5>
                 <button class="sign-in-btn">Sign in</button>
-                <div class="register">New customer?
-                    <a href="">Start here</a>
+                <div class="bar">New customer?
+                    <span href="" class="register">Start here</span>
                 </div>
                 <a href="" class="back-to-top">Back to top</a>
             </div>
@@ -488,5 +488,70 @@
             </span>
         </div>
     </footer>
+    <div class="sign-in-ticket">
+        <div class="sign-in-modal">
+            <div class="logo">
+                <img src="assets/img/logo3.jpg" alt="">
+            </div>
+            <div class="sign-in-container">
+                <h2>Sign-in</h2>
+                <label for="">Email or mobile phone number</label>
+                <input type="text">
+                <button class="btn">Continue</button>
+                <div class="policies">By continuing, you agree to Amazon's
+                    <a href="">Conditions of Use</a>
+                    and
+                    <a href="">Privacy Notice.</a>
+                </div>
+                <a class="help-btn" href="">Need Helps?</a>
+            </div>
+            <div class="register-form">
+                <div class="divider">
+                    <h5>New to Amazon?</h5>
+                </div>
+                <button class="btn register">Create your Amazon account</button>
+                <div class="link">
+                    <a href=""> Conditions of Use </a>
+                    <a href=""> Privacy Notice </a>
+                    <a href=""> Help </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register-ticket">
+        <div class="register-modal">
+            <div class="logo">
+                <img src="assets/img/logo3.jpg" alt="">
+            </div>
+            <div class="register-container">
+                <h2>Create account</h2>
+                <label for="">Your name</label>
+                <input type="text">
+                <label for="">Mobile number or email</label>
+                <input type="text">
+                <label for="">Password</label>
+                <input type="text">
+                <div style="font-size: 11px;line-height: 12px;">*Passwords must be at least 6 characters.</div>
+                <label for="">Re-enter password</label>
+                <input type="text">
+                <button class="btn">Continue</button>
+                <div class="policies">By creating an account, you agree to Amazon's
+                    <a href="">Conditions of Use</a>
+                    and
+                    <a href="">Privacy Notice.</a>
+                </div>
+                <div class="link sign-in-btn">
+                    Already have an account?
+                    <span>Sign-in</span>
+                </div>
+                <div class="link">
+                    Buying for work?
+                    <span>Create a free business account</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,8 @@
+@media screen and (max-width:584px) {
+    .mySlides img {
+        height: 300px;
+    }
+}
+.open {
+    display: block;
+}

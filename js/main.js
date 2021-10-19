@@ -47,4 +47,49 @@ function showItems(n) {
     items[i].style.display = "none";  
   }
   items[itemIndex-1].style.display = "flex";  
-} 
+}
+/* -------------SIGN-IN----------- */
+const signInBtns = document.getElementsByClassName('sign-in-btn');
+const signInTicket = document.querySelector('.sign-in-ticket');
+const signInModal = document.querySelector('.sign-in-modal');
+
+for ( let btn of signInBtns ) {
+  btn.addEventListener("click",opensignIn)
+}
+function opensignIn() {
+  signInTicket.classList.add('open');
+  registerTicket.classList.remove('open');
+}
+
+signInTicket.addEventListener("click",hidesignIn)
+
+function hidesignIn() {
+  signInTicket.classList.remove('open');
+}
+
+signInModal.addEventListener("click",function(event){
+  event.stopPropagation()
+})
+
+/* -----------------REGISTER---------------- */
+const registerBtns = document.getElementsByClassName('register')
+const registerTicket = document.querySelector('.register-ticket');
+const registerModal = document.querySelector('.register-modal');
+
+for ( let btn of registerBtns ) {
+  btn.addEventListener("click",openRegister)
+}
+function openRegister() {
+  registerTicket.classList.add('open');
+  signInTicket.classList.remove('open');
+}
+
+registerTicket.addEventListener("click",hideRegister)
+
+function hideRegister() {
+  registerTicket.classList.remove('open');
+}
+
+registerModal.addEventListener("click",function(event){
+  event.stopPropagation()
+})
